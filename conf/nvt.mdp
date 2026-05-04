@@ -1,0 +1,56 @@
+title                   = OPLS Lysozyme NVT equilibration 
+;define                  = -DPOSRES  ; position restrain the protein
+; Run parameters
+integrator               = md
+dt                       = 0.001 ; 10 fs
+nsteps                   = 1000000
+
+; OUTPUT CONTROL OPTIONS
+nstxout                  = 500
+nstvout                  = 500
+nstlog                   = 500
+nstenergy                = 500
+
+; NEIGHBORSEARCHING PARAMETERS
+nstlist                  = 10
+ns_type                  = grid
+pbc                      = xyz
+rlist                    = 1.2
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = cut-off ;Reaction_field_zero  ;Reaction_field (for use with Verlet-pairlist) ;PME (especially with polarizable water)
+coulomb-modifier	 = Potential-shift-Verlet
+rcoulomb_switch          = 0.0
+rcoulomb                 = 1.2
+vdw_type                 = Shift  ;cutoff (for use with Verlet-pairlist)   
+rvdw_switch              = 1.0
+rvdw                     = 1.2	;1.1 (for use with Verlet-pairlist)
+
+; Temperature coupling  
+tcoupl                   = v-rescale
+tc-grps                  = system
+tau_t                    = 0.5  
+ref_t                    = 303.15 
+
+; OPTIONS FOR BONDS     = 
+; MARTINI - for ring systems constraints are defined
+; which are best handled using Lincs. 
+; GENERATE VELOCITIES FOR STARTUP RUN = 
+
+gen_vel                  = yes
+gen_temp                 = 303.15
+gen_seed                 = 352029
+
+; OPTIONS FOR BONDS     = 
+constraints              = none 
+; Type of constraint algorithm = 
+constraint_algorithm     = Lincs
+; Do not constrain the start configuration = 
+unconstrained_start      = no
+; Highest order in the expansion of the constraint coupling matrix = 
+lincs_order              = 8
+; Lincs will write a warning to the stderr if in one step a bond = 
+; rotates over more degrees than = 
+lincs_warnangle          = 90
+
+
