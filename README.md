@@ -22,3 +22,10 @@ Install the following tools and make sure that they are on your PATH:
 2. GROMACS updated verswion.
 3. Python 3.10 or newer version.
 4. A PBS/SLURM schedular to use the job scripts.
+
+## Required Input Files ##
+This repo does not contain the system specific  coordinate/topology & Parameter files. Before, running the workflow of analysis and simulation, collect all the files such as : 
+1. Initial Coordinate file of the Polymer+[EMIM][DCA] IL systems generated using PACKMOL: .gro file
+2. Topolgy files that conatin the detail information of Molecules present in the system : topolo.top
+3. All the files with parameter information of the molecules : itp file
+4. Index number of each of molecules and group : index.ndx
