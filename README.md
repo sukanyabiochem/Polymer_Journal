@@ -29,3 +29,7 @@ This repo does not contain the system specific  coordinate/topology & Parameter 
 2. Topolgy files that conatin the detail information of Molecules present in the system : topolo.top
 3. All the files with parameter information of the molecules : itp file
 4. Index number of each of molecules and group : index.ndx
+
+## Cluster Usage ##
+Submit the MD simulation workflow in HPC cluster: 
+sbatch script.slurm
