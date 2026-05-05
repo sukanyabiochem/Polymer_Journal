@@ -1,4 +1,4 @@
-# Polymer_Journal
+# General Workflow #
 This repository contains a coarsed-grained (CG) molecular dynamics workflow built around VMD, Tk/tcl, GROMACS, bash script. The pipeline performs four major tasks:
 
 
