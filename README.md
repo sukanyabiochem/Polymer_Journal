@@ -15,3 +15,10 @@ This repository contains a coarsed-grained (CG) molecular dynamics workflow buil
 6. analysis_density_box/ : Automatic bash script for processing of the trajectory (in HPC) and calculate the 2D density with respect to simulation box. Poltting the data uisng the python script.
 7. conf/ : All the input file used for the MD simulation run from Energy minimization ---> NVT equlibration ---> NPT equlibration ---> NPT production run. Details of the using sequence of the files are mentioned in the jobs_script/script.slurm.
 8. jobs_script/ : Automatic submission script to run the steps MD simulation in HPC. 
+
+## Prerequisites ##
+Install the following tools and make sure that they are on your PATH:
+1. VMD with all the additional tools such as pbctools.
+2. GROMACS updated verswion.
+3. Python 3.10 or newer version.
+4. A PBS/SLURM schedular to use the job scripts.
