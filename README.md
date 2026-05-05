@@ -12,4 +12,6 @@ This repository contains a coarsed-grained (CG) molecular dynamics workflow buil
 3. analysis_ML_Kappa/ : Python script for analysis of MD simulation trajectory using ML based algorithm.
 4. analysis_RDF/ : Bash script for post processing of the MD simulation trajectory and then calculated radial distribution function (RDF) in HPC and plot them using python script.
 5. analysis_chain_morphology/ : tcl/Tk script for the analysis of chains flexibility during the production run, a bash script help to run the previous script for the automation, this script helps to analysis big trajectory using reasonable number of memory of the computer. Finally, the python script plot the data in 2D format.
-6. analysis_density_box/ : Automatic bash script for processing of the trajectory (in HPC) and calculate the 2D density with respect to simulation box. Poltting the data uisng the python script. 
+6. analysis_density_box/ : Automatic bash script for processing of the trajectory (in HPC) and calculate the 2D density with respect to simulation box. Poltting the data uisng the python script.
+7. conf/ : All the input file used for the MD simulation run from Energy minimization ---> NVT equlibration ---> NPT equlibration ---> NPT production run. Details of the using sequence of the files are mentioned in the jobs_script/script.slurm.
+8. jobs_script/ : Automatic submission script to run the steps MD simulation in HPC. 
