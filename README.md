@@ -8,7 +8,8 @@ This repository contains a coarsed-grained (CG) molecular dynamics workflow buil
 
 ## Repository Layout ##
 1. analysis_2D_plot/ : Python script for the calculation of 2D dynamical density profile for the simulation trajectory.
-2. analysis_IE/ : Automatic script for the preparation of all GROMACS input file and submission of jobs for interaction between the system components, and then plot them and get the avergae value of last 300 ns of simulation.
+2. analysis_IE/ : Automatic script for the preparation of all GROMACS input file and submission of jobs (HPC) for interaction between the system components, and then plot them and get the avergae value of last 300 ns of simulation.
 3. analysis_ML_Kappa/ : Python script for analysis of MD simulation trajectory using ML based algorithm.
-4. analysis_RDF/ : Bash script for post processing of the MD simulation trajectory and then calculated radial distribution function (RDF) and plot them using python script.
-5. analysis_chain_morphology/ : 
+4. analysis_RDF/ : Bash script for post processing of the MD simulation trajectory and then calculated radial distribution function (RDF) in HPC and plot them using python script.
+5. analysis_chain_morphology/ : tcl/Tk script for the analysis of chains flexibility during the production run, a bash script help to run the previous script for the automation, this script helps to analysis big trajectory using reasonable number of memory of the computer. Finally, the python script plot the data in 2D format.
+6. analysis_density_box/ : Processing of the trajectory (in HPC) to calculate the 2D density with respect to simulation box.  
