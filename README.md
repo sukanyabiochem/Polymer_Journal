@@ -5,6 +5,7 @@ This repository contains a coarsed-grained (CG) molecular dynamics workflow buil
 1. Run GROMACS MD simulation stages for minimization, NVT equilibration, NPT equilibration, and production dynamics in NPT condition.
 2. Before the analysis in GROMACS production trajectory is processed and then analysis performed using GROMACS tools, Tk/tcl tools and Python.
 3. After the analysis, the out files plotted using Python.
+4. This work is published in [Polymer Journal](https://www.sciencedirect.com/science/article/pii/S0032386126005720) 
 
 ## Repository Layout ##
 1. analysis_2D_plot/ : Python script for the calculation of 2D dynamical density profile for the simulation trajectory.
