@@ -7,7 +7,7 @@ This repository contains a coarse-grained (CG) molecular dynamics workflow built
 4. This work is published in [Polymer Journal](https://doi.org/10.1016/j.polymer.2026.130125) 
 
 ## Repository Layout ##
-1. 
+1. alchemical_FEP_PEO_block/ : GROMACS input file to calculate the Free Energy of Solvation for PEO in [EMIM][DCA] IL (all-atom) and automatic submission script in HPC. Python script to run the alchemical free energy (solvation free energy) from GROMACS out file using JAX for parella run of the job in GPU. 
 2. analysis_2D_plot/ : Python script for the calculation of 2D dynamical density profile for the simulation trajectory.
 3. analysis_IE/ : Automatic script for the preparation of all GROMACS input files and submission of jobs (HPC) for interaction between the system components, and then plot them and get the average value of the last 300 ns of simulation.
 4. analysis_ML_Kappa/ : Python script for analysis of MD simulation trajectory using ML-based algorithm.
